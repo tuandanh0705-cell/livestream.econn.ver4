@@ -2532,7 +2532,7 @@
       // --- CẤU HÌNH WEBHOOK TELEGRAM & GOOGLE SHEETS ---
       var TELEGRAM_BOT_TOKEN = '';   // Điền Token Bot Telegram khi go-live
       var TELEGRAM_CHAT_ID = '';     // Điền Chat ID Telegram khi go-live
-      var GOOGLE_SHEET_WEBHOOK = ''; // Apps Script Webhook URL
+      var GOOGLE_SHEET_WEBHOOK = 'https://script.google.com/macros/s/AKfycbwvif4hldAb2G7SxHOXGRT7cMazdyVn9fC4aKsfIVSGa5U5Ka8luoqasQE2mIKUYyCm/exec'; // Apps Script Webhook URL
 
       if (typeof fbq === 'function') fbq('track', 'Lead', { content_name: pkg, value: 0, currency: 'VND' });
       if (typeof gtag === 'function') gtag('event', 'generate_lead', { event_category: 'Lead Form', event_label: pkg, value: 1 });
@@ -2547,8 +2547,8 @@
       }
       if (GOOGLE_SHEET_WEBHOOK) {
         reqs.push(fetch(GOOGLE_SHEET_WEBHOOK, {
-          method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ name: name, phone: phone, shop: shop, package: pkg, live_time: time, source: 'landing_v4_live', timestamp: new Date().toISOString() })
+          method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body: JSON.stringify({ name: name, phone: phone, shop: shop, package: pkg, live_time: time, source: 'landing_v4_live', timestamp: new Date().toLocaleString('vi-VN') })
         }).catch(function (err) { console.warn('Google Sheet:', err); }));
       }
 
