@@ -414,7 +414,7 @@
     .pf { display: flex; align-items: center; gap: 9px; color: #ffffff; opacity: .95; font-size: 14.5px; font-weight: 700; }
     .pf svg { flex: 0 0 auto; fill: #ffffff; }
 
-    /* Hero b?n m?y t?nh: khung l?n, ch? to, chi?m tr?n khung h?nh nh? Lemon */
+    /* Hero bản máy tính: khung lớn, chữ to, chiếm trọn khung hình như Lemon */
     @media (min-width: 961px) {
       .hero { min-height: 92vh; padding: 118px 0 48px; }
       .hero-frame { max-width: 1100px; padding: 60px 64px 56px; border-radius: 44px; }
@@ -456,6 +456,9 @@
     .about-box p { margin: 0; }
     .about-box b { color: #fff; font-weight: 600; }
     .about-box .hl { color: var(--gold); font-weight: 600; }
+    .about-badge { margin: 10px auto 6px; max-width: 720px; border-radius: 24px; overflow: hidden; border: 2px solid var(--border-strong); box-shadow: 0 30px 70px -24px rgba(5, 5, 28, .8); transition: border-color .35s var(--ease); }
+    .about-badge:hover { border-color: var(--gold); }
+    .about-badge img { width: 100%; height: auto; display: block; }
 
     .tvc {
       position: relative; max-width: 940px; margin: 0 auto; aspect-ratio: 16 / 9; border-radius: 28px; overflow: hidden; cursor: pointer;
@@ -1530,7 +1533,7 @@
           </h1>
           
           <p class="hero-desc">
-            Đồng hành dài hạn cùng <b>100+ thương hiệu lớn</b>. Tăng trưởng doanh số, nâng tầm hình ảnh livestream trên mọi sàn!
+            Đồng hành cùng hơn <b>100+ thương hiệu lớn</b>,<br>Tăng trưởng doanh số, tối ưu chi phí vận hành trên mọi sàn!
           </p>
           
           <div class="hero-ctas">
@@ -1598,9 +1601,11 @@
         </div>
 
         <div class="about-box reveal">
-          <p><span class="hl">META ECOM GROUP</span> là hệ sinh thái Tech-powered Enablers tiên phong đồng hành cùng doanh nghiệp Việt Nam trên hành trình kiến tạo tăng trưởng Thương mại điện tử bền vững.</p>
-          <p>Sở hữu hệ thống 100+ phòng livestream chuẩn 4K cùng đội ngũ Host và ekip in-house dày dặn kinh nghiệm, chúng tôi tự hào vận hành hơn <b>500+ phiên live</b> tương đương 12.000 giờ lên sóng mỗi tháng.</p>
-          <p>Phát triển toàn diện từ Sản xuất Livestream (MCN), Vận hành gian hàng (Agency), Quảng cáo đa sàn (Digital) đến Đào tạo thực chiến (Uni) – hơn <b>100+ thương hiệu lớn</b> đã và đang đồng hành cùng META ECOM để công việc kinh doanh trên sàn thật dễ dàng và bùng nổ.</p>
+          <p><span class="hl">META ECOM</span> tự hào là Top 5 đối tác của TikTok Shop ở hai hạng mục Livestream/Video và Quản lý hàng hóa (Vận hành), ghi dấu năng lực và kinh nghiệm triển khai thực tế trong.</p>
+          <figure class="about-badge">
+            <img src="images/about-tsp-partner.png" alt="Vinh danh TikTok Shop Partner 2025 – META ECOM Top 01 dịch vụ Livestream/Video và Quản lý hàng hóa (Vận hành)" loading="lazy">
+          </figure>
+          <p>Với hệ thống 100+ phòng livestream chuẩn 4K, đội ngũ Host và ekip in-house chuyên nghiệp, Meta Ecom có năng lực vận hành hơn <b>500 phiên livestream mỗi tháng</b>, đáp ứng nhu cầu triển khai ở nhiều quy mô và ngành hàng khác nhau.</p>
         </div>
 
         <!-- TVC Player -->
